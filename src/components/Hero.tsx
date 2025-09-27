@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
-import yugmaHeadshot from "@/assets/yugma-headshot.jpg";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -9,16 +8,16 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-gradient-primary relative overflow-hidden">
-      {/* Background gradient effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-secondary/20" />
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-pulse delay-1000" />
+    <section className="min-h-screen flex items-center justify-center px-4 py-20 bg-background relative overflow-hidden">
+      {/* Subtle background effects */}
+      <div className="absolute inset-0 bg-gradient-to-br from-muted/5 via-transparent to-muted/10" />
+      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-muted/5 rounded-full blur-3xl animate-pulse" />
+      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-muted/5 rounded-full blur-3xl animate-pulse delay-1000" />
       
-      <div className="container mx-auto max-w-6xl relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Content */}
-          <div className="space-y-8 text-center lg:text-left">
+      <div className="container mx-auto max-w-4xl relative z-10">
+        <div className="text-center space-y-8">
+          {/* Content */}
+          <div className="space-y-8">
             <div className="space-y-4">
               <Badge variant="secondary" className="text-sm font-medium px-4 py-2">
                 Software Developer
@@ -26,14 +25,14 @@ const Hero = () => {
               <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-text bg-clip-text text-transparent leading-tight">
                 Yugma Patel
               </h1>
-              <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+              <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                 Full-Stack Developer specializing in modern web technologies, 
                 cloud architecture, and scalable solutions
               </p>
             </div>
 
             {/* Contact Info */}
-            <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
+            <div className="flex flex-wrap gap-4 justify-center">
               <a href="mailto:yugmapatel265@gmail.com" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-smooth">
                 <Mail className="w-4 h-4" />
                 <span className="text-sm">yugmapatel265@gmail.com</span>
@@ -45,7 +44,7 @@ const Hero = () => {
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button 
                 size="lg" 
                 className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-glow transition-smooth"
@@ -64,7 +63,7 @@ const Hero = () => {
             </div>
 
             {/* Social Links */}
-            <div className="flex gap-4 justify-center lg:justify-start">
+            <div className="flex gap-4 justify-center">
               <a 
                 href="https://www.linkedin.com/in/yugma-patel/" 
                 target="_blank" 
@@ -84,32 +83,18 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Right Image */}
-          <div className="flex justify-center lg:justify-end">
-            <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-primary/20 shadow-elegant">
-                <img 
-                  src={yugmaHeadshot} 
-                  alt="Yugma Patel - Software Developer" 
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="absolute inset-0 rounded-full bg-gradient-primary opacity-10" />
-            </div>
+          {/* Scroll Indicator */}
+          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              onClick={() => scrollToSection("about")}
+              className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
+            >
+              <span className="text-xs">Scroll Down</span>
+              <ArrowDown className="w-4 h-4" />
+            </Button>
           </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <Button 
-            variant="ghost" 
-            size="sm" 
-            onClick={() => scrollToSection("about")}
-            className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
-          >
-            <span className="text-xs">Scroll Down</span>
-            <ArrowDown className="w-4 h-4" />
-          </Button>
         </div>
       </div>
     </section>
