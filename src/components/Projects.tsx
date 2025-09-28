@@ -25,7 +25,8 @@ const Projects = () => {
         { label: "Daily Events", value: "10K+" }
       ],
       icon: <Mail className="w-6 h-6" />,
-      gradient: "from-primary/10 to-secondary/10"
+      gradient: "from-primary/10 to-secondary/10",
+      githubUrl: "https://github.com/Yugma2605/MailMind-AI"
     },
     {
       title: "Microservices-Based Chat Platform",
@@ -44,7 +45,8 @@ const Projects = () => {
         { label: "Deployment Speed", value: "+30%" }
       ],
       icon: <Users className="w-6 h-6" />,
-      gradient: "from-primary/10 to-secondary/10"
+      gradient: "from-primary/10 to-secondary/10",
+      githubUrl: "https://github.com/Yugma2605/Microservices-Chat-Platform"
     },
     {
       title: "Codify.AI",
@@ -66,7 +68,7 @@ const Projects = () => {
       gradient: "from-secondary/10 to-primary/10"
     },
     {
-      title: "Real-Time Cryptocurrency Price Streaming Platform",
+      title: "gRPCrypto: Real-Time Cryptocurrency Price Streaming Platform",
       description: "Real-time data streaming application for scalable market insights system providing accurate and low-latency cryptocurrency price updates.",
       period: "August 2025",
       category: "Backend",
@@ -82,7 +84,8 @@ const Projects = () => {
         { label: "Efficiency", value: "Optimized" }
       ],
       icon: <TrendingUp className="w-6 h-6" />,
-      gradient: "from-secondary/10 to-primary/10"
+      gradient: "from-secondary/10 to-primary/10",
+      githubUrl: "https://github.com/Yugma2605/gRPCrypto/tree/main"
     },
     {
       title: "JobSuccess.AI Platform",
@@ -101,7 +104,8 @@ const Projects = () => {
         { label: "Resumes Processed", value: "2K+" }
       ],
       icon: <Zap className="w-6 h-6" />,
-      gradient: "from-secondary/10 to-primary/10"
+      gradient: "from-secondary/10 to-primary/10",
+      githubUrl: "https://github.com/Yugma2605/JobSuccess-Platform"
     },
     {
       title: "Real-Time File Converter",
@@ -274,14 +278,17 @@ const Projects = () => {
 
                 {/* Action Buttons */}
                 <div className="flex gap-3 pt-4 border-t border-border/50">
-                  <Button variant="outline" size="sm" className="flex items-center gap-2">
-                    <Github className="w-4 h-4" />
-                    Source Code
-                  </Button>
-                  <Button variant="ghost" size="sm" className="flex items-center gap-2">
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </Button>
+                  {project.githubUrl && (
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      className="flex items-center gap-2"
+                      onClick={() => window.open(project.githubUrl, '_blank')}
+                    >
+                      <Github className="w-4 h-4" />
+                      Source Code
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
