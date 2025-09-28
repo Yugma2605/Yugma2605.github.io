@@ -55,14 +55,6 @@ const Hero = () => {
               <Button 
                 variant="outline" 
                 size="lg"
-                className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground transition-smooth"
-                onClick={() => scrollToSection("projects")}
-              >
-                View Projects
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
                 onClick={() => window.open('/Resume_Yugma_Patel.pdf', '_blank')}
               >
