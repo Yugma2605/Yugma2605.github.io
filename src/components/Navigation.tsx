@@ -67,7 +67,7 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="bg-primary hover:bg-primary-glow text-primary-foreground shadow-glow ml-4"
-              onClick={() => console.log("Download resume")}
+              onClick={() => window.open('/Resume_Yugma_Patel.pdf', '_blank')}
             >
               <Download className="w-4 h-4 mr-2" />
               Resume
@@ -102,7 +102,7 @@ const Navigation = () => {
                 size="sm" 
                 className="w-full bg-primary hover:bg-primary-glow text-primary-foreground mt-4"
                 onClick={() => {
-                  console.log("Download resume");
+                  window.open('/Resume_Yugma_Patel.pdf', '_blank');
                   setIsMobileMenuOpen(false);
                 }}
               >

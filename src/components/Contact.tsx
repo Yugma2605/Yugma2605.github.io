@@ -38,8 +38,7 @@ const Contact = () => {
   ];
 
   const handleDownloadResume = () => {
-    // This would typically link to a PDF resume
-    console.log("Downloading resume...");
+    window.open('/Resume_Yugma_Patel.pdf', '_blank');
   };
 
   return (
