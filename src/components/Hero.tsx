@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowDown, Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Github, Linkedin, Mail, Phone, Download } from "lucide-react";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
@@ -22,12 +22,12 @@ const Hero = () => {
               <Badge variant="secondary" className="text-sm font-medium px-4 py-2">
                 Software Developer
               </Badge>
-              <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-text bg-clip-text text-transparent leading-tight">
+              <h1 className="text-5xl lg:text-7xl font-bold bg-gradient-text bg-clip-text text-transparent leading-tight mb-12 pb-4">
                 Yugma Patel
               </h1>
               <p className="text-xl lg:text-2xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Full-Stack Developer specializing in modern web technologies, 
-                cloud architecture, and scalable solutions
+                AI Engineer & Full-Stack Developer specializing in building intelligent agents, 
+                scaling distributed systems, and driving innovation through problem-solving
               </p>
             </div>
 
@@ -60,6 +60,15 @@ const Hero = () => {
               >
                 View Projects
               </Button>
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
+                onClick={() => window.open('/Resume_Yugma_Patel.pdf', '_blank')}
+              >
+                <Download className="w-4 h-4 mr-2" />
+                Resume
+              </Button>
             </div>
 
             {/* Social Links */}
@@ -73,7 +82,7 @@ const Hero = () => {
                 <Linkedin className="w-5 h-5" />
               </a>
               <a 
-                href="https://github.com/yugmapatel" 
+                href="https://github.com/Yugma2605" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="p-3 rounded-full border border-border hover:border-primary hover:shadow-glow transition-smooth"
@@ -83,18 +92,6 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Scroll Indicator */}
-          <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-            <Button 
-              variant="ghost" 
-              size="sm" 
-              onClick={() => scrollToSection("about")}
-              className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary"
-            >
-              <span className="text-xs">Scroll Down</span>
-              <ArrowDown className="w-4 h-4" />
-            </Button>
-          </div>
         </div>
       </div>
     </section>

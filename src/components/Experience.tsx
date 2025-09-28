@@ -22,7 +22,6 @@ const Experience = () => {
       company: "School of Earth and Space Exploration - Arizona State University",
       location: "Arizona, USA", 
       period: "December 2023 - December 2024",
-      type: "Contract",
       achievements: [
         "Collaborated with NASA scientists to build interactive Mars data visualization tool using Python, Dash, and Flask",
         "Developed Mars map using TiTiler and Dash Leaflet, optimizing 1+ TB of data handling",
@@ -81,9 +80,11 @@ const Experience = () => {
                             <Calendar className="w-3 h-3" />
                             {exp.period}
                           </div>
-                          <Badge variant="secondary" className="text-xs mt-2">
-                            {exp.type}
-                          </Badge>
+                          {exp.type && (
+                            <Badge variant="secondary" className="text-xs mt-2">
+                              {exp.type}
+                            </Badge>
+                          )}
                         </div>
                       </div>
                     </div>

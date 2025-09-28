@@ -26,8 +26,8 @@ const Contact = () => {
     {
       icon: <Github className="w-5 h-5" />,
       label: "GitHub",
-      value: "yugmapatel",
-      href: "https://github.com/yugmapatel"
+      value: "Yugma2605",
+      href: "https://github.com/Yugma2605"
     },
     {
       icon: <MapPin className="w-5 h-5" />,

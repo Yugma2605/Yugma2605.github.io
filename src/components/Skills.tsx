@@ -126,8 +126,8 @@ const Skills = () => {
               {additionalSkills.map((skill, index) => (
                 <Badge 
                   key={index} 
-                  variant="secondary" 
-                  className="text-sm py-2 px-4 bg-portfolio-skill-tag border border-border/50 hover:border-primary/50 transition-smooth"
+                  variant="outline" 
+                  className="text-sm py-2 px-4 border-blue-500/50 text-blue-600 bg-blue-50 dark:bg-blue-950/20 dark:text-blue-400 dark:border-blue-400/50"
                 >
                   {skill}
                 </Badge>

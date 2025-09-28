@@ -12,9 +12,9 @@ const About = () => {
             Passionate About <span className="bg-gradient-text bg-clip-text text-transparent">Innovation</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            I'm a dedicated software developer with a strong foundation in full-stack development, 
-            cloud technologies, and modern software architecture. Currently pursuing my Master's at Arizona State University 
-            while gaining hands-on experience in building scalable solutions.
+            I'm a passionate AI Engineer and Backend Developer with 1.5 years of experience building intelligent agents 
+            and scaling distributed systems. Recently graduated with my MS in Computer Science from Arizona State University, 
+            I'm driven by innovation, high-impact problem-solving, and taking ownership of complex technical challenges.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ const About = () => {
                     </div>
                     <div className="flex items-center gap-1">
                       <Calendar className="w-3 h-3" />
-                      Aug 2023 - May 2025
+                      Aug 2023 - Aug 2025
                     </div>
                   </div>
                   <p className="text-sm text-muted-foreground mb-2">GPA: 3.50/4.00</p>
@@ -77,41 +77,41 @@ const About = () => {
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-medium mb-3 text-portfolio-highlight">Full-Stack Development</h4>
+                  <h4 className="font-medium mb-3 text-portfolio-highlight">AI Agent Development</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Experienced in building end-to-end web applications with modern frameworks and architectures.
+                    Expert in building intelligent AI agents and autonomous workflows that solve complex business problems.
                   </p>
                   <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="text-xs">React</Badge>
-                    <Badge variant="secondary" className="text-xs">Node.js</Badge>
-                    <Badge variant="secondary" className="text-xs">TypeScript</Badge>
-                    <Badge variant="secondary" className="text-xs">Next.js</Badge>
+                    <Badge variant="secondary" className="text-xs">LangGraph</Badge>
+                    <Badge variant="secondary" className="text-xs">RAG</Badge>
+                    <Badge variant="secondary" className="text-xs">MCP Server</Badge>
+                    <Badge variant="secondary" className="text-xs">LLM APIs</Badge>
                   </div>
                 </div>
 
                 <div>
-                  <h4 className="font-medium mb-3 text-portfolio-highlight">Cloud & DevOps</h4>
+                  <h4 className="font-medium mb-3 text-portfolio-highlight">Backend Systems & Scaling</h4>
                   <p className="text-sm text-muted-foreground mb-3">
-                    Proficient in cloud platforms and modern deployment strategies.
+                    Specialized in building and scaling distributed backend systems with high performance and reliability.
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    <Badge variant="secondary" className="text-xs">Microservices</Badge>
+                    <Badge variant="secondary" className="text-xs">Node.js</Badge>
+                    <Badge variant="secondary" className="text-xs">TypeScript</Badge>
+                    <Badge variant="secondary" className="text-xs">Kafka</Badge>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="font-medium mb-3 text-portfolio-highlight">Database & Cloud</h4>
+                  <p className="text-sm text-muted-foreground mb-3">
+                    Expertise in various database technologies, cloud platforms, and modern deployment strategies.
                   </p>
                   <div className="flex flex-wrap gap-2">
                     <Badge variant="secondary" className="text-xs">AWS</Badge>
-                    <Badge variant="secondary" className="text-xs">Docker</Badge>
-                    <Badge variant="secondary" className="text-xs">Kubernetes</Badge>
-                    <Badge variant="secondary" className="text-xs">Terraform</Badge>
-                  </div>
-                </div>
-
-                <div>
-                  <h4 className="font-medium mb-3 text-portfolio-highlight">Database & Storage</h4>
-                  <p className="text-sm text-muted-foreground mb-3">
-                    Expertise in various database technologies and data management solutions.
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    <Badge variant="secondary" className="text-xs">MongoDB</Badge>
+                    <Badge variant="secondary" className="text-xs">Supabase</Badge>
                     <Badge variant="secondary" className="text-xs">PostgreSQL</Badge>
                     <Badge variant="secondary" className="text-xs">Redis</Badge>
-                    <Badge variant="secondary" className="text-xs">DynamoDB</Badge>
                   </div>
                 </div>
               </div>
@@ -122,11 +122,11 @@ const About = () => {
         {/* Stats */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center">
-            <div className="text-3xl font-bold text-primary mb-2">3+</div>
+            <div className="text-3xl font-bold text-primary mb-2">1.5+</div>
             <div className="text-sm text-muted-foreground">Years Experience</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-secondary mb-2">30+</div>
+            <div className="text-3xl font-bold text-secondary mb-2">200+</div>
             <div className="text-sm text-muted-foreground">APIs Built</div>
           </div>
           <div className="text-center">
