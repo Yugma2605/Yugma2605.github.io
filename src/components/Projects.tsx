@@ -9,6 +9,26 @@ const Projects = () => {
   
   const projects = [
     {
+      title: "Stox.AI",
+      description: "Multi-Agent Financial Trading Platform",
+      period: "May 2025 - August 2025",
+      category: "Agentic AI",
+      technologies: ["Python", "React", "Websockets", "Langgraph", "Gemini", "Flask"],
+      highlights: [
+        "Built a multi-agent LLM trading framework where specialized agents (Market, Social, News, Fundamentals, Bull/Bear Debate, Risk, Portfolio) collaboratively analyze financial markets and make trading decisions.",
+        "Developed a FastAPI backend with REST + WebSocket support for real-time agent monitoring, session management, and report generation, integrating LangGraph to orchestrate agent interactions and decision flows.",
+        "Designed a responsive React + Tailwind dashboard to visualize agent teams, track live status, and display analysis reports, enabling seamless monitoring across desktop and mobile devices."
+      ],
+      metrics: [
+        { label: "Accuracy", value: "90%" },
+        { label: "Time Saved", value: "70%" },
+        { label: "Daily Events", value: "10K+" }
+      ],
+      icon: <Mail className="w-6 h-6" />,
+      gradient: "from-primary/10 to-secondary/10",
+      githubUrl: "https://github.com/Yugma2605/StoxAI"
+    },
+    {
       title: "MailMind.AI",
       description: "Agentic AI workflow using LangGraph and Gemini Pro to autonomously classify and organize Gmail messages into user-defined categories.",
       period: "May 2025 - August 2025",

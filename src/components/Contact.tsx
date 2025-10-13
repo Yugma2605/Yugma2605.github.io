@@ -29,12 +29,12 @@ const Contact = () => {
       value: "Yugma2605",
       href: "https://github.com/Yugma2605"
     },
-    {
-      icon: <MapPin className="w-5 h-5" />,
-      label: "Location",
-      value: "Arizona, USA",
-      href: null
-    }
+    // {
+    //   icon: <MapPin className="w-5 h-5" />,
+    //   label: "Location",
+    //   value: "Arizona, USA",
+    //   href: null
+    // }
   ];
 
   const handleDownloadResume = () => {
@@ -163,11 +163,11 @@ const Contact = () => {
                         </div>
                         <div className="flex items-center gap-2">
                           <Badge variant="outline" className="text-xs">
-                            Graduating May 2025
+                            Graduated August 2025
                           </Badge>
                         </div>
                         <p className="text-sm text-muted-foreground">
-                          Open to full-time positions starting Summer 2025
+                          Open to full-time positions
                         </p>
                       </div>
                     </div>
